@@ -1,0 +1,5 @@
+repos:
+-   repo: https://github.com/your-username/language-model-gateway-configuration
+    rev: v0.1.0
+    hooks:
+    -   id: validate-lmg-config

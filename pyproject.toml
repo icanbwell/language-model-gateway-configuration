@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "language-model-gateway-configuration"
+version = "0.1.0"
+description = "Configuration validator for Language Model Gateway"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.31.0",
+    "jsonschema>=4.19.0",
+]
+
+[project.scripts]
+validate-lmg-config = "language_model_gateway_configuration.validator:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "mypy>=1.0.0",
+    "ruff>=0.0.270",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["language_model_gateway_configuration"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "--cov=language_model_gateway_configuration"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.ruff]
+select = ["E", "F", "B", "I"]
+line-length = 88
+target-version = "py312"

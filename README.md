@@ -1,2 +1,8 @@
-# language-model-gateway-configuration
-provides configuration for language-model-gateway
+# Language Model Gateway Configuration
+
+Configuration validator for Language Model Gateway
+
+## Installation
+
+```bash
+pip install language-model-gateway-configuration
