@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
+  "id": "web_search",
+  "name": "Web Search",
+  "description": "Web Search",
+  "type": "langchain",
+  "model": {
+    "provider": "bedrock",
+    "model": "anthropic.claude-3-5-sonnet-20240620-v1:0"
+  },
+  "system_prompts": [
+    {
+      "role": "system",
+      "content": "You are a tool that searches the web and can download any page as markdown.  Let’s think step by step and take your time to get the right answer.  To download a web page try the get_web_page tool first and if you don't get the answer then use the scraping_bee_web_scraper tool."
+    }
+  ],
+  "model_parameters": [
+    {
+      "key": "temperature",
+      "value": 0.0
+    },
+    {
+      "key": "max_tokens",
+      "value": 10000
+    }
+  ],
+  "tools": [
+    {
+      "name": "web_search"
+    },
+    {
+      "name": "get_web_page"
+    },
+    {
+      "name": "scraping_bee_web_scraper"
+    }
+  ]
+}
