@@ -4,6 +4,7 @@
   "name": "b.well PHR",
   "description": "Conversational PHR",
   "type": "openai",
+  "disabled": true,
   "url": "http://host.docker.internal:5055/api/v1/chat/completions",
   "model": {
     "provider": "bedrock",
