@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
+  "id": "creating_images",
+  "name": "Create Images",
+  "description": "Image Creation Language Model",
+  "type": "langchain",
+  "model": {
+    "provider": "bedrock",
+    "model": "us.anthropic.claude-3-5-haiku-20241022-v1:0"
+  },
+  "system_prompts": [
+    {
+      "role": "system",
+      "content": "You are a tool that generates images based on the provided prompt.  Let’s think step by step and take your time to get the right answer."
+    }
+  ],
+  "model_parameters": [
+    {
+      "key": "temperature",
+      "value": 1.0
+    },
+    {
+      "key": "max_tokens",
+      "value": 1000
+    }
+  ],
+  "headers": [
+    {
+      "key": "Authorization",
+      "value": "Bearer OPENAI_API_KEY"
+    }
+  ],
+  "tools": [
+    {
+      "name": "current_date",
+      "parameters": [
+        {
+          "key": "format",
+          "value": "YYYY-MM-DD"
+        }
+      ]
+    },
+    {
+      "name": "web_search"
+    },
+    {
+      "name": "image_generator"
+    },
+    {
+      "name": "get_web_page"
+    }
+  ]
+}
