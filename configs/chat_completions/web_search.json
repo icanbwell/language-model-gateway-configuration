@@ -18,10 +18,6 @@
     {
       "key": "temperature",
       "value": 0.0
-    },
-    {
-      "key": "max_tokens",
-      "value": 10000
     }
   ],
   "tools": [
