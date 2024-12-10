@@ -35,9 +35,6 @@
           "value": "YYYY-MM-DD"
         }
       ]
-    },
-    {
-      "name": "web_search"
     }
   ],
   "example_prompts": [
