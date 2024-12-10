@@ -30,17 +30,6 @@
       "value": "Bearer OPENAI_API_KEY"
     }
   ],
-  "tools": [
-    {
-      "name": "current_date",
-      "parameters": [
-        {
-          "key": "format",
-          "value": "YYYY-MM-DD"
-        }
-      ]
-    }
-  ],
   "example_prompts": [
     {
       "role": "user",
