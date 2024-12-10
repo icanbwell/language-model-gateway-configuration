@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "creating_images",
   "name": "Create Images",
-  "description": "This is a model that generates images based on the provided prompt.",
+  "description": "This is a model that generates images based on the provided prompt.  Note that AI is not good at showing text in images.   If you are creating diagrams, use the Create Diagrams model instead.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",
@@ -53,7 +53,11 @@
   "example_prompts": [
     {
       "role": "user",
-        "content": "create a photo where a kid is very excited to be in a meeting"
+      "content": "create a photo where a kid is very excited to be in a meeting"
+    },
+    {
+      "role": "user",
+      "content": "create a photo where many people are outside in the rain"
     }
   ]
 }
