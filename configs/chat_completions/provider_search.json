@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
+  "id": "provider_search",
+  "name": "Provider Search",
+  "description": "Finds information about providers",
+  "type": "langchain",
+  "model": {
+    "provider": "bedrock",
+    "model": "us.anthropic.claude-3-5-haiku-20241022-v1:0"
+  },
+  "system_prompts": [
+    {
+      "role": "system",
+      "content": "You are an assistant that finds information about providers like doctors, clinics and hospitals.  Let’s think step by step and take your time to get the right answer.  "
+    }
+  ],
+  "tools": [
+    {
+      "name": "provider_search"
+    },
+    {
+      "name": "web_search"
+    },
+    {
+      "name": "get_web_page"
+    },
+    {
+      "name": "scraping_bee_web_scraper"
+    }
+  ]
+}
