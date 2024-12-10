@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "prompt_helper",
   "name": "Prompt Helper",
-  "description": "This models helps you create the best prompt for LLMs. Specify your goal and constraints, and I will help you create a detailed system prompt to guide a language model in completing the task effectively.",
+  "description": "This models helps you craft the best prompt. Specify your goal and constraints, and I will help you create a detailed system prompt to guide a language model in completing the task effectively.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",
@@ -15,7 +15,7 @@
     },
     {
       "role": "system",
-      "content": "Task, Goal, or Current Prompt:"
+      "content": "The user will provide a Task, Goal, or Current Prompt"
     }
   ],
   "model_parameters": [
