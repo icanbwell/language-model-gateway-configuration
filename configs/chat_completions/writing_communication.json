@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "writing_communication",
   "name": "Writing Communication",
-  "description": "Writing Communication Model",
+  "description": "This models writes communication for a variety of purposes.  It uses the current date, pubmed and web search tools.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",
@@ -41,6 +41,18 @@
     },
     {
       "name": "web_search"
+    },
+    {
+      "name": "get_web_page"
+    },
+    {
+      "name": "scraping_bee_web_scraper"
+    }
+  ],
+  "example_prompts": [
+    {
+      "role": "user",
+      "content": "Write an email to Google telling that our project X will be delayed.  Instead of shipping on Jan 10, we will not ship on March 10.  The delay is due to Google not deciding on which mobile technology to support."
     }
   ]
 }

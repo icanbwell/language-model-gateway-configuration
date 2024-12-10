@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "python_coding",
   "name": "Python Coding",
-  "description": "Python Coding Language Model",
+  "description": "This is a Python Coding Language Model.  It helps you write Python code or troubleshoot Python code.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",
@@ -38,6 +38,12 @@
     },
     {
       "name": "web_search"
+    }
+  ],
+  "example_prompts": [
+    {
+      "role": "user",
+      "content": "```Why does this code not successfully save the file:\ns3_client.put_object(\n    Bucket=s3_url.bucket,\n    Key=s3_url.key,\n    Body=image_data,\n    ContentType=\"image/png\",  # Adjust content type as needed\n)```"
     }
   ]
 }

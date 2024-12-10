@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "python_unit_tests",
   "name": "Python Unit Tests",
-  "description": "Python Unit Tests",
+  "description": "This model writes unit tests for Python.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",
@@ -38,6 +38,12 @@
     },
     {
       "name": "web_search"
+    }
+  ],
+  "example_prompts": [
+    {
+      "role": "user",
+      "content": "```def test_addition(a,b):\n    return a + b\n```"
     }
   ]
 }

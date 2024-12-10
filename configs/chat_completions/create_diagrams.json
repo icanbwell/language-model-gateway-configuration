@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "create_diagrams",
   "name": "Create Diagrams",
-  "description": "Creates Diagrams",
+  "description": "This model creates various types of diagrams like flowcharts, Sequence diagrams, UML diagrams, and network diagrams.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",
@@ -15,7 +15,7 @@
     }
   ],
   "tools": [
-        {
+    {
       "name": "graph_viz_diagram_generator"
     },
     {
@@ -38,6 +38,24 @@
     },
     {
       "name": "scraping_bee_web_scraper"
+    }
+  ],
+  "example_prompts": [
+    {
+      "role": "user",
+      "content": "```Generate an Entity-Relationship Diagram with the following specifications:\n\nEntities and Attributes:\n1. User Entity\n   - user_id* (primary key)\n   - username\n   - email\n   - registration_date\n\n2. Product Entity\n   - product_id* (primary key)\n   - name\n   - price\n   - category\n   - stock_quantity\n\n3. Order Entity\n   - order_id* (primary key)\n   - user_id (foreign key)\n   - order_date\n   - total_amount\n   - status\n\nRelationships:\n- User places Order (one_to_many)\n- Order contains Product (many_to_many)\n- Product belongs to Category (many_to_one)\n\nDiagram Requirements:\n- Use distinct colors for each entity\n- Clearly mark primary keys\n- Show relationship cardinalities```"
+    },
+    {
+      "role": "user",
+      "content": "```Create a flow chart for: My Complex Process:\n\nNodes:\n- Start: Beginning of process (oval, lightgreen)\n- Check Condition: Decision point (diamond, lightyellow)\n- Process A: Main processing (box, lightblue)\n- End: Process completion (oval, lightcoral)\n\nConnections:\n- Start: Check Condition (Begin)\n- Check Condition: Process A (Yes)\n- Check Condition: End (No)```"
+    },
+    {
+      "role": "user",
+      "content": "```# Home Network Topology Diagram\n\n## Network Components\n- **Internet Modem**: Cloud, gray\n- **Wireless Router**: Router, blue\n- **Laptop 1**: Server, green\n- **Laptop 2**: Server, green\n- **Desktop**: Server, blue\n- **Network Printer**: Server, yellow\n\n## Connections\n- Internet Modem → Wireless Router: \"Internet\"\n- Wireless Router → Laptop 1: \"WiFi\"\n- Wireless Router → Laptop 2: \"WiFi\"\n- Wireless Router → Desktop: \"Ethernet\"\n- Wireless Router → Network Printer: \"Print Server\"\n\n## Diagram Title\nHome Network Infrastructure```"
+    },
+    {
+      "role": "user",
+      "content": "```Create a sequence diagram with these participants:\n- User\n- AuthService\n- Database\n\nInteractions:\n1. User sends login() to AuthService\n2. AuthService queries validateCredentials() to Database\n3. Database returns authResult to AuthService\n4. AuthService sends loginResponse to User\n\nTitle: User Authentication Flow```"
     }
   ]
 }

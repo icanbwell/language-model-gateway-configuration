@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "web_search",
   "name": "Web Search",
-  "description": "Web Search",
+  "description": "This model searches the web.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",
@@ -29,6 +29,12 @@
     },
     {
       "name": "scraping_bee_web_scraper"
+    }
+  ],
+  "example_prompts": [
+    {
+      "role": "user",
+      "content": "Find the email address of the CIO of Thedacare"
     }
   ]
 }

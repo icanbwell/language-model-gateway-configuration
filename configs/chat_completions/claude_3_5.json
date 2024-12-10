@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "claude_3_5",
   "name": "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
-  "description": "Claude 3.5 Model",
+  "description": "This is a general purpose model that can be used for a variety of tasks but it doesn't have any of the tools that the general purpose model has.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",

@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "javascript_unit_tests",
   "name": "Javascript Unit Tests",
-  "description": "Javascript Unit Tests",
+  "description": "This model writes Javascript Unit Tests",
   "type": "langchain",
   "model": {
     "provider": "bedrock",

@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "parse_web_page",
   "name": "Parse Web Page",
-  "description": "Parse Web Page Model",
+  "description": "This model is used to parse web pages.  It can search the web and download and parse web pages.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",
@@ -23,6 +23,12 @@
     },
     {
       "name": "scraping_bee_web_scraper"
+    }
+  ],
+  "example_prompts": [
+    {
+      "role": "user",
+      "content": "List the PCPs on this web page: https://directory.thedacare.org/providers"
     }
   ]
 }

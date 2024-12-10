@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "provider_search",
   "name": "Provider Search",
-  "description": "Finds information about providers",
+  "description": "This model finds information about providers.  It uses b.well provider search, web search and scraping web pages.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",
@@ -26,6 +26,12 @@
     },
     {
       "name": "scraping_bee_web_scraper"
+    }
+  ],
+  "example_prompts": [
+    {
+      "role": "user",
+      "content": "Get the address of Dr. Meggin A. Sabatino at Medstar"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "creating_images",
   "name": "Create Images",
-  "description": "Image Creation Language Model",
+  "description": "This is a model that generates images based on the provided prompt.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",
@@ -48,6 +48,12 @@
     },
     {
       "name": "get_web_page"
+    }
+  ],
+  "example_prompts": [
+    {
+      "role": "user",
+        "content": "create a photo where a kid is very excited to be in a meeting"
     }
   ]
 }
