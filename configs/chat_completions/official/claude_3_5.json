@@ -4,6 +4,7 @@
   "name": "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
   "description": "This is a base model that can be used for a variety of tasks but it doesn't have any of the tools that the general purpose model has.  We recommend using the General Purpose model instead.",
   "type": "langchain",
+  "owner": "Imran Qureshi",
   "model": {
     "provider": "bedrock",
     "model": "us.anthropic.claude-3-5-sonnet-20241022-v2:0"

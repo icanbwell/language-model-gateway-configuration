@@ -1,23 +1,24 @@
 {
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
-  "id": "creating_images",
-  "name": "Create Images",
-  "description": "This is a model that generates images based on the provided prompt.  Note that AI is not good at showing text in images.   If you are creating diagrams, use the Create Diagrams model instead.",
+  "id": "image_prompt",
+  "name": "Image Prompt",
+  "description": "This is a general purpose language model that is optimized for image prompts.  It is more expensive than our General Purpose model so only use this if your input includes images.",
   "type": "langchain",
   "model": {
     "provider": "bedrock",
-    "model": "us.anthropic.claude-3-5-haiku-20241022-v1:0"
+    "model": "us.anthropic.claude-3-5-sonnet-20241022-v2:0"
   },
+  "owner": "Imran Qureshi",
   "system_prompts": [
     {
       "role": "system",
-      "content": "You are a tool that generates images based on the provided prompt.  Let’s think step by step and take your time to get the right answer."
+      "content": "You are a tool that answers questions including images and generates answers.  Let’s think step by step and take your time to get the right answer."
     }
   ],
   "model_parameters": [
     {
       "key": "temperature",
-      "value": 1.0
+      "value": 0.5
     },
     {
       "key": "max_tokens",
@@ -48,16 +49,15 @@
     },
     {
       "name": "get_web_page"
+    },
+    {
+      "name": "scraping_bee_web_scraper"
     }
   ],
   "example_prompts": [
     {
       "role": "user",
-      "content": "create a photo where a kid is very excited to be in a meeting"
-    },
-    {
-      "role": "user",
-      "content": "create a photo where many people are outside in the rain"
+      "content": "Analyse the image and provide a detailed description of the image."
     }
   ]
 }

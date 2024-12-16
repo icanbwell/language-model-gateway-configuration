@@ -3,11 +3,7 @@
   "id": "python_coding",
   "name": "Python Coding",
   "description": "This is a Python Coding Language Model.  It helps you write Python code or troubleshoot Python code.",
-  "type": "langchain",
-  "model": {
-    "provider": "bedrock",
-    "model": "us.anthropic.claude-3-5-haiku-20241022-v1:0"
-  },
+  "owner": "Imran Qureshi",
   "system_prompts": [
     {
       "role": "system",

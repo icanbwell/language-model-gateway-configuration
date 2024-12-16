@@ -3,12 +3,8 @@
   "id": "python_repl",
   "name": "Python REPL",
   "description": "Python REPL Model",
-  "type": "langchain",
+  "owner": "Imran Qureshi",
   "disabled": true,
-  "model": {
-    "provider": "bedrock",
-    "model": "us.anthropic.claude-3-5-haiku-20241022-v1:0"
-  },
   "system_prompts": [
     {
       "role": "system",

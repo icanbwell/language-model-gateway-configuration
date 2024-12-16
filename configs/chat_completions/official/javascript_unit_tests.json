@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
+  "id": "javascript_unit_tests",
+  "name": "Javascript Unit Tests",
+  "description": "This model writes Javascript Unit Tests",
+  "owner": "Imran Qureshi",
+  "system_prompts": [
+    {
+      "role": "system",
+      "content": "You are an agent that writes unit tests for Javascript code.  Always include javascript types and target node.js 18 and higher. Let’s think step by step and take your time to get the right answer."
+    }
+  ],
+  "model_parameters": [
+    {
+      "key": "temperature",
+      "value": 0
+    }
+  ],
+  "headers": [
+    {
+      "key": "Authorization",
+      "value": "Bearer OPENAI_API_KEY"
+    }
+  ],
+  "tools": [
+    {
+      "name": "current_date",
+      "parameters": [
+        {
+          "key": "format",
+          "value": "YYYY-MM-DD"
+        }
+      ]
+    },
+    {
+      "name": "web_search"
+    }
+  ]
+}

@@ -3,11 +3,7 @@
   "id": "provider_search",
   "name": "Provider Search",
   "description": "This model finds information about providers.  It uses b.well provider search, web search and scraping web pages.",
-  "type": "langchain",
-  "model": {
-    "provider": "bedrock",
-    "model": "us.anthropic.claude-3-5-haiku-20241022-v1:0"
-  },
+  "owner": "Imran Qureshi",
   "system_prompts": [
     {
       "role": "system",
