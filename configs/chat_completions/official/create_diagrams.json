@@ -3,11 +3,7 @@
   "id": "create_diagrams",
   "name": "Create Diagrams",
   "description": "This model creates various types of diagrams like flowcharts, Sequence diagrams, UML diagrams, and network diagrams.",
-  "type": "langchain",
-  "model": {
-    "provider": "bedrock",
-    "model": "us.anthropic.claude-3-5-haiku-20241022-v1:0"
-  },
+  "owner": "Imran Qureshi",
   "system_prompts": [
     {
       "role": "system",

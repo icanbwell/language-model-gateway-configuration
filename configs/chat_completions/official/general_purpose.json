@@ -3,11 +3,7 @@
   "id": "general_purpose",
   "name": "General Purpose",
   "description": "This is a general purpose model that can be used for a variety of tasks.  However, it may not work as well as the Task Specific models.  Use the Task Specific models if there is one that aligns with your task.",
-  "type": "langchain",
-  "model": {
-    "provider": "bedrock",
-    "model": "us.anthropic.claude-3-5-haiku-20241022-v1:0"
-  },
+  "owner": "Imran Qureshi",
   "system_prompts": [
     {
       "role": "system",

@@ -3,11 +3,7 @@
   "id": "prompt_helper",
   "name": "Prompt Helper",
   "description": "This models helps you craft the best prompt. Specify your goal and constraints, and I will help you create a detailed system prompt to guide a language model in completing the task effectively.",
-  "type": "langchain",
-  "model": {
-    "provider": "bedrock",
-    "model": "us.anthropic.claude-3-5-haiku-20241022-v1:0"
-  },
+  "owner": "Imran Qureshi",
   "system_prompts": [
     {
       "role": "system",

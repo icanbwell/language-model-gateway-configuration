@@ -3,11 +3,7 @@
   "id": "parse_web_page",
   "name": "Parse Web Page",
   "description": "This model is used to parse web pages.  It can search the web and download and parse web pages.",
-  "type": "langchain",
-  "model": {
-    "provider": "bedrock",
-    "model": "us.anthropic.claude-3-5-haiku-20241022-v1:0"
-  },
+  "owner": "Imran Qureshi",
   "system_prompts": [
     {
       "role": "system",

@@ -3,11 +3,7 @@
   "id": "writing_communication",
   "name": "Writing Communication",
   "description": "This models writes communication for a variety of purposes.  It uses the current date, pubmed and web search tools.",
-  "type": "langchain",
-  "model": {
-    "provider": "bedrock",
-    "model": "us.anthropic.claude-3-5-haiku-20241022-v1:0"
-  },
+  "owner": "Imran Qureshi",
   "system_prompts": [
     {
       "role": "system",
