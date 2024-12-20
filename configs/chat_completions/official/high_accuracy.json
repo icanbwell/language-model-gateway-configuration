@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "high_accuracy",
   "name": "High Accuracy",
-  "description": "This is a general purpose model that is focused on highly accurate answers and reducing hallucinations.  This model is best for tasks where accuracy is more important than creativity.  This model may be slower than the General Purpose model.",
+  "description": "This is a general purpose model that is focused on highly accurate answers and reducing hallucinations.  This model is best for tasks where accuracy is more important than creativity.  This model may be slower than the General Purpose model and may not present results where it feels it is not confident.",
   "owner": "Imran Qureshi",
   "model": {
     "provider": "bedrock",
