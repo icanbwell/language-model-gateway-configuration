@@ -6,7 +6,7 @@
    "owner": "Kenan Spruill",
    "model": {
      "provider": "bedrock",
-     "model": "meta.llama3-2-1b-instruct-v1:0"
+     "model": "us.meta.llama3-2-1b-instruct-v1:0"
    },
    "system_prompts": [
      {
