@@ -34,23 +34,6 @@
        "value": "Bearer OPENAI_API_KEY"
      }
    ],
-   "tools": [
-     {
-       "name": "current_date",
-       "parameters": [
-         {
-           "key": "format",
-           "value": "YYYY-MM-DD"
-         }
-       ]
-     },
-     {
-       "name": "scraping_bee_web_scraper"
-     },
-     {
-      "name": "web_search"
-     }
-   ],
    "example_prompts": [
      {
        "role": "user",
