@@ -49,10 +49,7 @@
      },
      {
       "name": "web_search"
-     },
-     {
-      "name": "url_to_markdown"
-    }
+     }
    ],
    "example_prompts": [
      {
