@@ -1,0 +1,53 @@
+{
+   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
+   "id": "search_mining_claude_haiku3",
+   "name": "Search Mining Claude Haiku3",
+   "description": "Specialized Anthropic LLM configuration for processing NPI records and identifying organizational affiliations with high precision and cost efficiency.",
+   "owner": "Kenan Spruill",
+   "model": {
+     "provider": "bedrock",
+     "model": "us.anthropic.claude-3-haiku-20240307-v1:0"
+   },
+   "system_prompts": [
+     {
+       "role": "system",
+       "content": "You are an AI assistant focused on providing accurate and precise information. Prioritize factual, verifiable information and avoid speculation or unsubstantiated claims. Let’s think step by step and take your time to get the right answer."
+     }
+   ],
+   "model_parameters": [
+     {
+       "key": "temperature",
+       "value": 0
+     },
+     {
+       "key": "top_p",
+       "value": 0.1
+     },
+     {
+       "key": "max_tokens",
+       "value": 4000
+     }
+   ],
+   "headers": [
+     {
+       "key": "Authorization",
+       "value": "Bearer OPENAI_API_KEY"
+     }
+   ],
+   "example_prompts": [
+     {
+       "role": "user",
+       "content": "Within this block of text, extract organizational affiliations for NPI 1234567890 with specialty in cardiology in California"
+     },
+     {
+       "role": "user",
+       "content": "Using this block of text, validate hospital connections for John Smith a pediatric surgeon in Chicago"
+     },
+     {
+       "role": "user",
+       "content": "Find primary workplace for a dermatologist with NPI number 1876543210 from this block of text."
+     }
+
+
+   ]
+}
