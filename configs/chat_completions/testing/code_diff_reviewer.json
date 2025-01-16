@@ -37,6 +37,12 @@
     },
     {
       "name": "get_web_page"
+    },
+    {
+      "name": "github_pull_request_analyzer"
+    },
+    {
+      "name": "github_pull_request_diff"
     }
   ],
   "example_prompts": [
