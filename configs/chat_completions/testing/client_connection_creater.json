@@ -17,42 +17,18 @@
   "model_parameters": [
     {
       "key": "temperature",
-      "value": 0
+      "value": "0"
     },
     {
       "key": "top_p",
-      "value": 0.1
+      "value": "0.1"
     },
     {
       "key": "max_tokens",
-      "value": 4000
+      "value": "4000"
     }
   ],
   "tools": [
-    {
-      "name": "current_date",
-      "parameters": [
-        {
-          "key": "format",
-          "value": "YYYY-MM-DD"
-        }
-      ]
-    },
-    {
-      "name": "pubmed"
-    },
-    {
-      "name": "web_search"
-    },
-    {
-      "name": "arxiv_search"
-    },
-    {
-      "name": "get_web_page"
-    },
-    {
-      "name": "scraping_bee_web_scraper"
-    },
     {
       "name": "pdf_text_extractor"
     }
