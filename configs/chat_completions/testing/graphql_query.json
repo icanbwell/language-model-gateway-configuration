@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
+  "id": "general_purpose",
+  "name": "GraphQL Query Creator",
+  "description": "This is a GraphQL Query Creator model It takes an English description for a query and generates a GraphQL Query.",
+  "owner": "Mintu Sah/Shubham Goel/Darryl Cate",
+  "system_prompts": [
+    {
+      "role": "system",
+      "content": "You are a tool that takes English input and creates a GraphQL query."
+    }
+  ],
+  "model_parameters": [
+    {
+      "key": "temperature",
+      "value": 0.2
+    },
+    {
+      "key": "max_tokens",
+      "value": 1000
+    }
+  ],
+  "headers": [
+    {
+      "key": "Authorization",
+      "value": "Bearer OPENAI_API_KEY"
+    }
+  ],
+  "tools": [
+   {
+      "name": "web_search"
+    },
+   {
+      "name": "graphql_query_generator"
+    },
+  ],
+  "example_prompts": [
+    {
+      "role": "user",
+      "content": "Show me all Patients with first name John"
+    },
+    {
+      "role": "user",
+      "content": "Show me the Condition code for a specific Patient"
+    },
+    {
+      "role": "user",
+      "content": "List all patients with high blood pressure older than 70"
+    }
+  ]
+}
