@@ -26,11 +26,11 @@
     "example_prompts": [
         {
             "role": "user",
-            "content": "I am giving you the s3_url for the file 's3://test-bucket/abc.csv'. Give me the health summary for the users in the file."
+            "content": "I am providing the S3 URI for the file 's3://test-bucket/abc.csv'. Please give me the health summary for the users in this file."
         },
         {
             "role": "user",
-            "content": "I am giving you the s3_url for the file 's3://test-bucket/abc.csv'. Give me the health summary for the first 5 users in the file."
+            "content": "I am providing the S3 URI for the file 's3://test-bucket/abc.csv'. Please give me the health summary for the first five users in the file."
         }
     ],
     "model_parameters": [
