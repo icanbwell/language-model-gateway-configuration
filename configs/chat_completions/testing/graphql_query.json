@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "general_purpose",
-  "name": "GraphQL Query Creator",
-  "description": "This is a GraphQL Query Creator model It takes an English description for a query and generates a GraphQL Query.",
+  "name": "FHIR Server GraphQL Query Creator",
+  "description": "This is a FHIR Server GraphQL Query Creator model It takes an English description for a query and generates a GraphQL Query.",
   "owner": "Mintu Sah/Shubham Goel/Darryl Cate",
   "system_prompts": [
     {
