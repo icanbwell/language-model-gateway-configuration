@@ -1,0 +1,100 @@
+{
+    "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
+    "id": "fhir_synthetic_data_generator",
+    "name": "Comprehensive FHIR Synthetic Data Generator",
+    "description": "Advanced FHIR R4B synthetic test data generation framework supporting extensive, configurable healthcare resource simulation",
+    "version": "1.0.0",
+    "metadata": {
+      "maintainer": "Healthcare Data Engineering Team",
+      "license": "MIT",
+      "repository": "https://github.com/your-org/fhir-test-data-generator"
+    },
+    "generation_principles": {
+      "key_requirements": [
+        "Generate highly robust simulated real-world test data",
+        "Cover ALL required and optional FHIR key/value pairs",
+        "Ensure clinical realism and comprehensive scenario modeling",
+        "Use UUIDv4 for all identifiers",
+        "Maintain data consistency across resources"
+      ],
+      "reference_sources": [
+        "https://gist.github.com/ChaseBig/88945646e34c9e107a7af5062443e30a",
+        "https://www.hl7.org/fhir/r4b/"
+      ]
+    },
+    "system_configuration": {
+      "data_generation_mode": {
+        "strict_validation": true,
+        "allow_partial_generation": false,
+        "minimum_required_fields": "ALL"
+      },
+      "identifier_generation": {
+        "id_format": "UUIDv4",
+        "consistency_enforcement": true
+      },
+      "datetime_formatting": {
+        "patient_dob": "YYYY-MM-DD",
+        "resource_timestamps": "ISO8601"
+      }
+    },
+    "patient_configuration": {
+      "required_fields": [
+        "patient_reference_id",
+        "patient_fn",
+        "patient_ln",
+        "patient_gender",
+        "patient_DOB",
+        "patient_address_line1",
+        "patient_city",
+        "patient_state",
+        "patient_zip"
+      ],
+      "validation_rules": {
+        "patient_gender": ["male", "female"],
+        "patient_state": "US_STATE_ABBREVIATION",
+        "patient_zip": "US_ZIP_CODE_PATTERN"
+      }
+    },
+    "resource_type_configuration": {
+      "supported_types": [
+        "Observation",
+        "Procedure",
+        "Encounter",
+        "Immunization",
+        "Condition",
+        "MedicationRequest",
+        "MedicationDispense",
+        "MedicationStatement",
+        "CarePlan",
+        "AllergyIntolerance"
+      ],
+      "generation_constraints": {
+        "minimum_records": 1,
+        "maximum_records": 50,
+        "default_record_count": 5
+      }
+    },
+    "security_configuration": {
+      "default_security_tags": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code": "AI_CURATED",
+          "display": "AI Assisted Curation"
+        },
+        {
+          "system": "https://www.icanbwell.com/owner",
+          "code": "FHIR-synthetic-data"
+        }
+      ],
+      "source_reference_template": "https://icanbwell.com/synthetic-data/{{resourceType}}/{{resourceId}}"
+    },
+    "interactive_generation_protocol": {
+      "confirmation_required": true,
+      "randomization_strategy": "COMPREHENSIVE_CLINICAL_REALISM"
+    },
+    "example_generation_scenarios": [
+      "Complex Patient Medical History",
+      "Multi-Resource Clinical Workflow",
+      "Comprehensive Medication Management"
+    ]
+  }
