@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
-    "id": "healthcare_data_discovery_assistant",
-    "name": "data_profiling_map_to_fhir",
+    "id": "data_profiling_and_fhir_mapping",
+    "name": "Data Profiling and FHIR_Mapping",
     "description": "Takes a data file (csv or json) and a standard specification as inputs and returns a profile of the data along with a fhir R4 mapping specifications.",
     "owner": "Dustin Elton",
     "system_prompts": [
