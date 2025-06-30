@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
+  "$schema": "https://raw.githubusercontent.com/icanbwell/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "claude_4_0",
   "name": "us.anthropic.claude-3-5-sonnet-20240620-v1:0",
   "description": "This is a base model that can be used for a variety of tasks but it doesn't have any of the tools that the general purpose model has.  We recommend using the General Purpose model instead.",
