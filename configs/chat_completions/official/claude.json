@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/icanbwell/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
-  "id": "claude_4_0",
-  "name": "claude4",
+  "id": "claude",
+  "name": "claude",
   "description": "This is a base model that can be used for a variety of tasks but it doesn't have any of the tools that the general purpose model has.  We recommend using the General Purpose model instead.",
   "type": "langchain",
   "owner": "Imran Qureshi",
