@@ -1,9 +1,9 @@
 {
-  "$schema": "https://raw.githubusercontent.com/imranq2/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
+  "$schema": "https://raw.githubusercontent.com/icanbwell/language_model_gateway/main/language_model_gateway/configs/config_schema.json",
   "id": "high_accuracy",
   "name": "High Accuracy",
   "description": "This is a general purpose model that is focused on highly accurate answers and reducing hallucinations.  This model is best for tasks where accuracy is more important than creativity.  This model may be slower than the General Purpose model and may not present results where it feels it is not confident.",
-  "owner": "Imran Qureshi",
+  "owner": "Sean Hegarty",
   "model": {
     "provider": "bedrock",
     "model": "us.anthropic.claude-3-5-sonnet-20241022-v2:0"
@@ -18,10 +18,6 @@
     {
       "key": "temperature",
       "value": 0
-    },
-    {
-      "key": "top_p",
-      "value": 0.1
     },
     {
       "key": "max_tokens",
@@ -43,6 +39,18 @@
           "value": "YYYY-MM-DD"
         }
       ]
+    },
+    {
+      "name": "calculator_average"
+    },
+    {
+      "name": "calculator_stddev"
+    },
+    {
+      "name": "calculator_length"
+    },
+    {
+      "name": "calculator_sum"
     },
     {
       "name": "pubmed"
